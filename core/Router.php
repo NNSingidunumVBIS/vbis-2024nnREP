@@ -15,7 +15,9 @@ class Router
 
     public function get($path, $callback)
     {
+
         $this->routes['get'][$path] = $callback;
+
     }
 
     public function resolve()

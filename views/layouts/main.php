@@ -7,15 +7,15 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <title>
-       NN VBIS 2024/2025
+        VBIS 2024/2025
     </title>
     <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+    <link href="../assets/css/font.css" rel="stylesheet"/>
     <!-- Nucleo Icons -->
-    <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-icons.css" rel="stylesheet"/>
-    <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-svg.css" rel="stylesheet"/>
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet"/>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet"/>
     <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/fontawesome.js" crossorigin="anonymous"></script>
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.1.0" rel="stylesheet"/>
 </head>
@@ -27,11 +27,11 @@
     <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
            aria-hidden="true" id="iconSidenav"></i>
-        <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html "
+        <a class="navbar-brand m-0" href="/"
            target="_blank">
             <img src="../assets/img/logo-ct-dark.png" width="26px" height="26px" class="navbar-brand-img h-100"
                  alt="main_logo">
-            <span class="ms-1 font-weight-bold">Creative Tim</span>
+            <span class="ms-1 font-weight-bold"> VBIS 2024/2025</span>
         </a>
     </div>
     <hr class="horizontal dark mt-0">
@@ -104,7 +104,7 @@
     }
 </script>
 <!-- Github buttons -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script async defer src="../assets/js/button.js"></script>
 <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="../assets/js/argon-dashboard.min.js?v=2.1.0"></script>
 </body>

@@ -1,3 +1,9 @@
+<?php
+
+use app\core\Application;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,14 +16,19 @@
         VBIS 2024/2025
     </title>
     <!--     Fonts and icons     -->
-    <link href="../assets/css/font.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
     <!-- Nucleo Icons -->
-    <link href="../assets/css/nucleo-icons.css" rel="stylesheet"/>
-    <link href="../assets/css/nucleo-svg.css" rel="stylesheet"/>
+    <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-icons.css" rel="stylesheet"/>
+    <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-svg.css" rel="stylesheet"/>
     <!-- Font Awesome Icons -->
-    <script src="../assets/js/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.1.0" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="../assets/js/plugins/toastr/toastr.min.css">
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/js/plugins/toastr/toastr.min.js"></script>
+    <script src="../assets/js/plugins/toastr/toastr-options.js"></script>
 </head>
 
 <body class="g-sidenav-show   bg-gray-100">
@@ -57,19 +68,19 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="/login">
+                <a class="nav-link " href="/products">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-copy-04 text-dark text-sm opacity-10"></i>
+                        <i class="ni ni-folder-17 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Login</span>
+                    <span class="nav-link-text ms-1">Products</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="/registration">
+                <a class="nav-link " href="/processLogout">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-collection text-dark text-sm opacity-10"></i>
+                        <i class="ni ni-user-run text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Registration</span>
+                    <span class="nav-link-text ms-1">Log out</span>
                 </a>
             </li>
         </ul>
@@ -104,9 +115,14 @@
     }
 </script>
 <!-- Github buttons -->
-<script async defer src="../assets/js/button.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="../assets/js/argon-dashboard.min.js?v=2.1.0"></script>
 </body>
+
+<?php
+Application::$app->session->showSuccessNotification();
+Application::$app->session->showErrorNotification();
+?>
 
 </html>

@@ -51,7 +51,6 @@ use app\models\UserModel;
                                 }
                             }
                         }
-
                         ?>
                     </div>
                 </div>

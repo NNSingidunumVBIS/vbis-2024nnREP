@@ -40,6 +40,6 @@ $app->router->get("/updateService", [ServiceController::class, 'update']);
 $app->router->get("/createService", [ServiceController::class, 'create']);
 $app->router->post("/processUpdateService", [ServiceController::class, 'processUpdate']);
 $app->router->post("/processCreateService", [ServiceController::class, 'processCreate']);
-
+$app->router->post("/processCreateService", [ServiceController::class, 'processCreate']);
 
 $app->run();
